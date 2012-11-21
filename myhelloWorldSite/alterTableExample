@@ -1,0 +1,9 @@
+REATE TABLE books2 (
+  bookid integer PRIMARY KEY NOT NULL,
+  title varchar(100) NOT NULL,
+  authorid integer
+);
+INSERT INTO books2 (bookid, title, authorid)
+  SELECT bookid, title, authorid FROM books;
+DROP TABLE books;
+ALTER TABLE books2 RENAME TO books;
