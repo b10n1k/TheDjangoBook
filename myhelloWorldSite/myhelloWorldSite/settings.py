@@ -122,6 +122,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'books',
+    'contact',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -152,3 +153,6 @@ LOGGING = {
         },
     }
 }
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
